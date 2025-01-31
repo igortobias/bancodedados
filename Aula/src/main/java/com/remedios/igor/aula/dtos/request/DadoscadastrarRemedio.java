@@ -1,4 +1,4 @@
-package com.remedios.igor.aula.dtos;
+package com.remedios.igor.aula.dtos.request;
 
 import com.remedios.igor.aula.enums.Via;
 import jakarta.persistence.Enumerated;

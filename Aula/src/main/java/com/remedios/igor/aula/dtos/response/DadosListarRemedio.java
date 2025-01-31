@@ -1,4 +1,4 @@
-package com.remedios.igor.aula.dtos;
+package com.remedios.igor.aula.dtos.response;
 
 import com.remedios.igor.aula.enums.Via;
 import com.remedios.igor.aula.model.Remedio;

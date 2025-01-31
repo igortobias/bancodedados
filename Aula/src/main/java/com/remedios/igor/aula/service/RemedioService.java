@@ -1,14 +1,13 @@
 package com.remedios.igor.aula.service;
 
-import com.remedios.igor.aula.dtos.DadoscadastrarRemedio;
+import com.remedios.igor.aula.dtos.request.DadoscadastrarRemedio;
 import com.remedios.igor.aula.enums.Via;
 import com.remedios.igor.aula.model.Laboratorio;
 import com.remedios.igor.aula.model.Remedio;
-import com.remedios.igor.aula.dtos.DadosListarRemedio;
-import com.remedios.igor.aula.dtos.DadosatualizarRemedio;
+import com.remedios.igor.aula.dtos.response.DadosListarRemedio;
+import com.remedios.igor.aula.dtos.request.DadosatualizarRemedio;
 import com.remedios.igor.aula.repository.LaboratotioRepo;
 import com.remedios.igor.aula.repository.RemedioRepository;
-import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

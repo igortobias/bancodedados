@@ -1,11 +1,11 @@
 package com.remedios.igor.aula.controller;
 
 
-import com.remedios.igor.aula.dtos.DadoscadastrarRemedio;
+import com.remedios.igor.aula.dtos.request.DadoscadastrarRemedio;
 import com.remedios.igor.aula.enums.Via;
 import com.remedios.igor.aula.model.Remedio;
-import com.remedios.igor.aula.dtos.DadosListarRemedio;
-import com.remedios.igor.aula.dtos.DadosatualizarRemedio;
+import com.remedios.igor.aula.dtos.response.DadosListarRemedio;
+import com.remedios.igor.aula.dtos.request.DadosatualizarRemedio;
 import com.remedios.igor.aula.service.RemedioService;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;

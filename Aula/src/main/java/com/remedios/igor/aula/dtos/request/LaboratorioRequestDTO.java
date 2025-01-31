@@ -1,4 +1,4 @@
-package com.remedios.igor.aula.dtos;
+package com.remedios.igor.aula.dtos.request;
 
 public record LaboratorioRequestDTO(
 

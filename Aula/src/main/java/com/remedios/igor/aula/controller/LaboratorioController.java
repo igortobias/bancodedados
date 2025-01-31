@@ -1,7 +1,7 @@
 package com.remedios.igor.aula.controller;
 
-import com.remedios.igor.aula.dtos.LaboratorioRequestDTO;
-import com.remedios.igor.aula.dtos.ResponseAPI;
+import com.remedios.igor.aula.dtos.request.LaboratorioRequestDTO;
+import com.remedios.igor.aula.dtos.response.ResponseAPI;
 import com.remedios.igor.aula.service.LaboratorioService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping(value = "/api/laboratorio")

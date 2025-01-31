@@ -1,9 +1,7 @@
 package com.remedios.igor.aula.controller;
 
-import com.remedios.igor.aula.dtos.LaboratorioRequestDTO;
-import com.remedios.igor.aula.dtos.PacineteDTO;
-import com.remedios.igor.aula.dtos.ResponseAPI;
-import com.remedios.igor.aula.service.LaboratorioService;
+import com.remedios.igor.aula.dtos.request.PacineteDTO;
+import com.remedios.igor.aula.dtos.response.ResponseAPI;
 import com.remedios.igor.aula.service.PacienteService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

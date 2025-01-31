@@ -1,10 +1,7 @@
 package com.remedios.igor.aula.service;
 
-import com.remedios.igor.aula.dtos.LaboratorioRequestDTO;
-import com.remedios.igor.aula.dtos.PacineteDTO;
-import com.remedios.igor.aula.model.Laboratorio;
+import com.remedios.igor.aula.dtos.request.PacineteDTO;
 import com.remedios.igor.aula.model.Paciente;
-import com.remedios.igor.aula.repository.LaboratotioRepo;
 import com.remedios.igor.aula.repository.PacienteRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
