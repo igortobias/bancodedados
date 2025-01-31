@@ -31,4 +31,7 @@ public class Laboratorio {
     private String avenida;
 
     private String celula;
+
+    public Laboratorio(String nome, String provincia, String distrito, String bairro, String quarteirao, String avenida, String celula) {
+    }
 }

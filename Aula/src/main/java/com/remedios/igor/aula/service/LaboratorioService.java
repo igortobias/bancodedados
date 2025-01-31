@@ -1,8 +1,10 @@
 package com.remedios.igor.aula.service;
 
 import com.remedios.igor.aula.dtos.LaboratorioRequestDTO;
+import com.remedios.igor.aula.dtos.PacineteDTO;
 import com.remedios.igor.aula.model.Laboratorio;
 import com.remedios.igor.aula.repository.LaboratotioRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -21,29 +23,24 @@ public class LaboratorioService {
     }
 
     public void criarLab(LaboratorioRequestDTO dto){
-        try {
             Laboratorio laboratorio;
 
             if (laboratotioRepo.existsByNome(dto.nome())){
                 throw new ResponseStatusException(HttpStatus.CONFLICT, "Laboratorio ja existe");
             }
 
-            laboratorio = new Laboratorio();
-            laboratorio.setNome(dto.nome());
-            laboratorio.setProvincia(dto.provincia());
-            laboratorio.setDistrito(dto.distrito());
-            laboratorio.setBairro(dto.bairro());
-            laboratorio.setQuarteirao(dto.quarteirao());
-            laboratorio.setAvenida(dto.avenida());
-            laboratorio.setCelula(dto.celula());
-
+       laboratorio = new Laboratorio (
+                dto.nome(),
+                dto.provincia(),
+                dto.distrito(),
+                dto.bairro(),
+                dto.quarteirao(),
+                dto.avenida(),
+                dto.celula()
+        );
 
             this.laboratorio(laboratorio);
 
-        }catch (ResponseStatusException e){
-            throw e;
-        }catch (Exception e){
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Ocorreu um erro ao criar laboratorio");
-        }
     }
+
 }
