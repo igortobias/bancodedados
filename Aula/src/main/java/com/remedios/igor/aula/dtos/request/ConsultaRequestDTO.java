@@ -6,5 +6,11 @@ public record ConsultaRequestDTO(
         LocalDate data,
         String diagnostico,
         Long medicoId,
-        Long pacienteId
-) {}
+        Long pacienteId,
+        String exames
+)
+{
+
+}
+
+

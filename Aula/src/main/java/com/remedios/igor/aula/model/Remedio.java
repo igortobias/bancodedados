@@ -31,4 +31,9 @@ public class Remedio {
     @ManyToOne
     @JoinColumn(name = "laboratorio_id")
     private Laboratorio laboratorio;
+
+    @ManyToOne
+    @JoinColumn(name = "farmacia_id")
+    private Farmacia farmacia;
+
 }

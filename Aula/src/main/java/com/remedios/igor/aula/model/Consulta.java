@@ -1,10 +1,20 @@
 package com.remedios.igor.aula.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.time.LocalDate;
 import java.util.List;
 
-@Entity
+@Entity(name = "Consulta")
+@Table(name = "consulta")
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Consulta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,4 +33,7 @@ public class Consulta {
 
     @OneToMany(mappedBy = "consulta", cascade = CascadeType.ALL)
     private List<Exame> exames;
+
+    public Consulta(String diagnostico, Long aLong, Long aLong1, String exames) {
+    }
 }

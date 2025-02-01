@@ -1,8 +1,17 @@
 package com.remedios.igor.aula.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity
+@Entity(name = "Exame")
+@Table(name = "exame")
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Exame {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,4 +27,9 @@ public class Exame {
     @ManyToOne
     @JoinColumn(name = "laboratorio_id")
     private Laboratorio laboratorio;
+
+    public Exame(String tipo, String resultado, Long aLong, Long aLong1) {
+    }
+    {
+    }
 }
